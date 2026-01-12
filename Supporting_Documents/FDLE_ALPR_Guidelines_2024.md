@@ -2,7 +2,7 @@
 
 **Revised and Approved by the CJJIS Council on November 13, 2024**
 
-**Source:** [Florida Department of Law Enforcement (FDLE)]([https://www.fdle.state.fl.us/](https://www.fdle.state.fl.us/getContentAsset/dcdfae6a-0ec7-45e8-9112-b21f0d3415bb/73aabf56-e6e5-4330-95a3-5f2a270a1d2b/CJJIS-Council-ALPR-Guidelines-Revised-Approved-on-11-13-2024.pdf?language=en))
+**Source:** [Florida Department of Law Enforcement (FDLE)](https://www.fdle.state.fl.us/getContentAsset/dcdfae6a-0ec7-45e8-9112-b21f0d3415bb/73aabf56-e6e5-4330-95a3-5f2a270a1d2b/CJJIS-Council-ALPR-Guidelines-Revised-Approved-on-11-13-2024.pdf?language=en)
 
 ---
 
