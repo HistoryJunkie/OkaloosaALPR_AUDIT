@@ -1,75 +1,161 @@
-119.011 Definitions.—As used in this chapter, the term:
+# Florida Statute 119.011
+## Definitions
 
-(1) "Actual cost of duplication" means the cost of the material and supplies used to duplicate the public record, but does not include labor cost or overhead cost associated with such duplication.
+**Source:** [Florida Statutes - Section 119.011](https://www.leg.state.fl.us/Statutes/index.cfm?App_mode=Display_Statute&Search_String=&URL=0100-0199/0119/Sections/0119.011.html)
 
-(2) "Agency" means any state, county, district, authority, or municipal officer, department, division, board, bureau, commission, or other separate unit of government created or established by law including, for the purposes of this chapter, the Commission on Ethics, the Public Service Commission, and the Office of Public Counsel, and any other public or private agency, person, partnership, corporation, or business entity acting on behalf of any public agency.
+---
 
-(3)(a) "Criminal intelligence information" means information with respect to an identifiable person or group of persons collected by a criminal justice agency in an effort to anticipate, prevent, or monitor possible criminal activity.
+As used in this chapter, the term:
 
-(b) "Criminal investigative information" means information with respect to an identifiable person or group of persons compiled by a criminal justice agency in the course of conducting a criminal investigation of a specific act or omission, including, but not limited to, information derived from laboratory tests, reports of investigators or informants, or any type of surveillance.
+## (1) Actual Cost of Duplication
 
-(c) "Criminal intelligence information" and "criminal investigative information" shall not include:
+"Actual cost of duplication" means the cost of the material and supplies used to duplicate the public record, but does not include labor cost or overhead cost associated with such duplication.
 
-1. The time, date, location, and nature of a reported crime.
+## (2) Agency
 
-2. The name, sex, age, and address of a person arrested or of the victim of a crime except as provided in s. 119.071(2)(h) or (o).
+"Agency" means any state, county, district, authority, or municipal officer, department, division, board, bureau, commission, or other separate unit of government created or established by law including, for the purposes of this chapter, the Commission on Ethics, the Public Service Commission, and the Office of Public Counsel, and any other public or private agency, person, partnership, corporation, or business entity acting on behalf of any public agency.
 
-3. The time, date, and location of the incident and of the arrest.
+## (3) Criminal Intelligence and Investigative Information
 
-4. The crime charged.
+### (a) Criminal Intelligence Information
 
-5. Documents given or required by law or agency rule to be given to the person arrested, except as provided in s. 119.071(2)(h) or (m), and, except that the court in a criminal case may order that certain information required by law or agency rule to be given to the person arrested be maintained in a confidential manner and exempt from the provisions of s. 119.07(1) until released at trial if it is found that the release of such information would:
+"Criminal intelligence information" means information with respect to an identifiable person or group of persons collected by a criminal justice agency in an effort to anticipate, prevent, or monitor possible criminal activity.
 
-a. Be defamatory to the good name of a victim or witness or would jeopardize the safety of such victim or witness; and
+### (b) Criminal Investigative Information
 
-b. Impair the ability of a state attorney to locate or prosecute a codefendant.
+"Criminal investigative information" means information with respect to an identifiable person or group of persons compiled by a criminal justice agency in the course of conducting a criminal investigation of a specific act or omission, including, but not limited to, information derived from laboratory tests, reports of investigators or informants, or any type of surveillance.
 
-6. Informations and indictments except as provided in s. 905.26.
+### (c) Exclusions from Criminal Intelligence and Investigative Information
 
-(d) The word "active" shall have the following meaning:
+"Criminal intelligence information" and "criminal investigative information" shall not include:
 
-1. Criminal intelligence information shall be considered "active" as long as it is related to intelligence gathering conducted with a reasonable, good faith belief that it will lead to detection of ongoing or reasonably anticipated criminal activities.
+**1.** The time, date, location, and nature of a reported crime.
 
-2. Criminal investigative information shall be considered "active" as long as it is related to an ongoing investigation which is continuing with a reasonable, good faith anticipation of securing an arrest or prosecution in the foreseeable future.
+**2.** The name, sex, age, and address of a person arrested or of the victim of a crime except as provided in s. 119.071(2)(h) or (o).
+
+**3.** The time, date, and location of the incident and of the arrest.
+
+**4.** The crime charged.
+
+**5.** Documents given or required by law or agency rule to be given to the person arrested, except as provided in s. 119.071(2)(h) or (m), and, except that the court in a criminal case may order that certain information required by law or agency rule to be given to the person arrested be maintained in a confidential manner and exempt from the provisions of s. 119.07(1) until released at trial if it is found that the release of such information would:
+
+   **a.** Be defamatory to the good name of a victim or witness or would jeopardize the safety of such victim or witness; and
+
+   **b.** Impair the ability of a state attorney to locate or prosecute a codefendant.
+
+**6.** Informations and indictments except as provided in s. 905.26.
+
+### (d) Definition of "Active"
+
+The word "active" shall have the following meaning:
+
+**1.** Criminal intelligence information shall be considered "active" as long as it is related to intelligence gathering conducted with a reasonable, good faith belief that it will lead to detection of ongoing or reasonably anticipated criminal activities.
+
+**2.** Criminal investigative information shall be considered "active" as long as it is related to an ongoing investigation which is continuing with a reasonable, good faith anticipation of securing an arrest or prosecution in the foreseeable future.
 
 In addition, criminal intelligence and criminal investigative information shall be considered "active" while such information is directly related to pending prosecutions or appeals. The word "active" shall not apply to information in cases which are barred from prosecution under the provisions of s. 775.15 or other statute of limitation.
 
-(4) "Criminal justice agency" means:
+## (4) Criminal Justice Agency
 
-(a) Any law enforcement agency, court, or prosecutor;
+"Criminal justice agency" means:
 
-(b) Any other agency charged by law with criminal law enforcement duties;
+**(a)** Any law enforcement agency, court, or prosecutor;
 
-(c) Any agency having custody of criminal intelligence information or criminal investigative information for the purpose of assisting such law enforcement agencies in the conduct of active criminal investigation or prosecution or for the purpose of litigating civil actions under the Racketeer Influenced and Corrupt Organization Act, during the time that such agencies are in possession of criminal intelligence information or criminal investigative information pursuant to their criminal law enforcement duties; or
+**(b)** Any other agency charged by law with criminal law enforcement duties;
 
-(d) The Department of Corrections.
+**(c)** Any agency having custody of criminal intelligence information or criminal investigative information for the purpose of assisting such law enforcement agencies in the conduct of active criminal investigation or prosecution or for the purpose of litigating civil actions under the Racketeer Influenced and Corrupt Organization Act, during the time that such agencies are in possession of criminal intelligence information or criminal investigative information pursuant to their criminal law enforcement duties; or
 
-(5) "Custodian of public records" means the elected or appointed state, county, or municipal officer charged with the responsibility of maintaining the office having public records, or his or her designee.
+**(d)** The Department of Corrections.
 
-(6) "Data processing software" means the programs and routines used to employ and control the capabilities of data processing hardware, including, but not limited to, operating systems, compilers, assemblers, utilities, library routines, maintenance routines, applications, and computer networking programs.
+## (5) Custodian of Public Records
 
-(7) "Duplicated copies" means new copies produced by duplicating, as defined in s. 283.30.
+"Custodian of public records" means the elected or appointed state, county, or municipal officer charged with the responsibility of maintaining the office having public records, or his or her designee.
 
-(8) "Exemption" means a provision of general law which provides that a specified record or meeting, or portion thereof, is not subject to the access requirements of s. 119.07(1), s. 286.011, or s. 24, Art. I of the State Constitution.
+## (6) Data Processing Software
 
-(9) "Information technology resources" means data processing hardware and software and services, communications, supplies, personnel, facility resources, maintenance, and training.
+"Data processing software" means the programs and routines used to employ and control the capabilities of data processing hardware, including, but not limited to, operating systems, compilers, assemblers, utilities, library routines, maintenance routines, applications, and computer networking programs.
 
-(10) "Paratransit" has the same meaning as provided in s. 427.011.
+## (7) Duplicated Copies
 
-(11) "Proprietary software" means data processing software that is protected by copyright or trade secret laws.
+"Duplicated copies" means new copies produced by duplicating, as defined in s. 283.30.
 
-(12) "Public records" means all documents, papers, letters, maps, books, tapes, photographs, films, sound recordings, data processing software, or other material, regardless of the physical form, characteristics, or means of transmission, made or received pursuant to law or ordinance or in connection with the transaction of official business by any agency.
+## (8) Exemption
 
-(13) "Redact" means to conceal from a copy of an original public record, or to conceal from an electronic image that is available for public viewing, that portion of the record containing exempt or confidential information.
+"Exemption" means a provision of general law which provides that a specified record or meeting, or portion thereof, is not subject to the access requirements of s. 119.07(1), s. 286.011, or s. 24, Art. I of the State Constitution.
 
-(14) "Sensitive," for purposes of defining agency-produced software that is sensitive, means only those portions of data processing software, including the specifications and documentation, which are used to:
+## (9) Information Technology Resources
 
-(a) Collect, process, store, and retrieve information that is exempt from s. 119.07(1);
+"Information technology resources" means data processing hardware and software and services, communications, supplies, personnel, facility resources, maintenance, and training.
 
-(b) Collect, process, store, and retrieve financial management information of the agency, such as payroll and accounting records; or
+## (10) Paratransit
 
-(c) Control and direct access authorizations and security measures for automated systems.
+"Paratransit" has the same meaning as provided in s. 427.011.
 
-(15) "Utility" means a person or entity that provides electricity, natural gas, telecommunications, water, chilled water, reuse water, or wastewater.
+## (11) Proprietary Software
 
-History.—s. 1, ch. 67-125; s. 2, ch. 73-98; s. 3, ch. 75-225; ss. 1, 2, ch. 79-187; s. 8, ch. 85-53; s. 1, ch. 88-188; s. 5, ch. 93-404; s. 5, ch. 93-405; s. 5, ch. 95-207; s. 6, ch. 95-296; s. 10, ch. 95-398; s. 40, ch. 96-406; s. 2, ch. 97-90; s. 3, ch. 2004-335; s. 43, ch. 2005-251; s. 1, ch. 2008-57; s. 1, ch. 2016-95; s. 1, ch. 2017-11; s. 2, ch. 2018-2.
+"Proprietary software" means data processing software that is protected by copyright or trade secret laws.
+
+## (12) Public Records
+
+"Public records" means all documents, papers, letters, maps, books, tapes, photographs, films, sound recordings, data processing software, or other material, regardless of the physical form, characteristics, or means of transmission, made or received pursuant to law or ordinance or in connection with the transaction of official business by any agency.
+
+## (13) Redact
+
+"Redact" means to conceal from a copy of an original public record, or to conceal from an electronic image that is available for public viewing, that portion of the record containing exempt or confidential information.
+
+## (14) Sensitive
+
+"Sensitive," for purposes of defining agency-produced software that is sensitive, means only those portions of data processing software, including the specifications and documentation, which are used to:
+
+**(a)** Collect, process, store, and retrieve information that is exempt from s. 119.07(1);
+
+**(b)** Collect, process, store, and retrieve financial management information of the agency, such as payroll and accounting records; or
+
+**(c)** Control and direct access authorizations and security measures for automated systems.
+
+## (15) Utility
+
+"Utility" means a person or entity that provides electricity, natural gas, telecommunications, water, chilled water, reuse water, or wastewater.
+
+---
+
+## Legislative History
+
+- s. 1, ch. 67-125
+- s. 2, ch. 73-98
+- s. 3, ch. 75-225
+- ss. 1, 2, ch. 79-187
+- s. 8, ch. 85-53
+- s. 1, ch. 88-188
+- s. 5, ch. 93-404
+- s. 5, ch. 93-405
+- s. 5, ch. 95-207
+- s. 6, ch. 95-296
+- s. 10, ch. 95-398
+- s. 40, ch. 96-406
+- s. 2, ch. 97-90
+- s. 3, ch. 2004-335
+- s. 43, ch. 2005-251
+- s. 1, ch. 2008-57
+- s. 1, ch. 2016-95
+- s. 1, ch. 2017-11
+- s. 2, ch. 2018-2
+
+---
+
+## Related Statutes
+
+- **Florida Statutes § 119.07(1)** - Inspection and copying of records; photographing public records; fees
+- **Florida Statutes § 119.071** - General exemptions from inspection or copying of public records
+- **Florida Statutes § 286.011** - Public meetings and records; public inspection; criminal and civil penalties (Sunshine Law)
+- **Florida Statutes § 775.15** - Time limitations; general time limitations; exceptions
+- **Florida Statutes § 905.26** - Sealing of indictments
+- **Florida Constitution, Article I, § 24** - Access to public records and meetings
+
+---
+
+**Document Information:**
+- **Statute:** Florida Statutes Chapter 119, Section 119.011
+- **Title:** Definitions
+- **Chapter:** Public Records
+- **Current through:** 2024 Legislative Session
