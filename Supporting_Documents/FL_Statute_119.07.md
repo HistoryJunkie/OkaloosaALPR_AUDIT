@@ -7,39 +7,39 @@
 
 ## (1) Inspection and Copying of Public Records
 
-### (a) General Right of Access
+### (a)
 
 Every person who has custody of a public record shall permit the record to be inspected and copied by any person desiring to do so, at any reasonable time, under reasonable conditions, and under supervision by the custodian of the public records.
 
-### (b) Designation of Custodian
+### (b)
 
 A custodian of public records or a person having custody of public records may designate another officer or employee of the agency to permit the inspection and copying of public records, but must disclose the identity of the designee to the person requesting to inspect or copy public records.
 
-### (c) Prompt Acknowledgment and Good Faith Response
+### (c)
 
 A custodian of public records and his or her designee must acknowledge requests to inspect or copy records promptly and respond to such requests in good faith. A good faith response includes making reasonable efforts to determine from other officers or employees within the agency whether such a record exists and, if so, the location at which the record can be accessed.
 
-### (d) Redaction of Exempt Portions
+### (d)
 
 A person who has custody of a public record who asserts that an exemption applies to a part of such record shall redact that portion of the record to which an exemption has been asserted and validly applies, and such person shall produce the remainder of such record for inspection and copying.
 
-### (e) Statement of Basis for Exemption
+### (e)
 
 If the person who has custody of a public record contends that all or part of the record is exempt from inspection and copying, he or she shall state the basis of the exemption that he or she contends is applicable to the record, including the statutory citation to an exemption created or afforded by statute.
 
-### (f) Written Reasons for Exemption
+### (f)
 
 If requested by the person seeking to inspect or copy the record, the custodian of public records shall state in writing and with particularity the reasons for the conclusion that the record is exempt or confidential.
 
-### (g) In Camera Inspection
+### (g)
 
 In any civil action in which an exemption to this section is asserted, if the exemption is alleged to exist under or by virtue of s. 119.071(1)(d) or (f), (2)(d), (e), or (f), or (4)(c), the public record or part thereof in question shall be submitted to the court for an inspection in camera. If an exemption is alleged to exist under or by virtue of s. 119.071(2)(c), an inspection in camera is discretionary with the court. If the court finds that the asserted exemption is not applicable, it shall order the public record or part thereof in question to be immediately produced for inspection or copying as requested by the person seeking such access.
 
-### (h) Record Preservation During Dispute
+### (h)
 
 Even if an assertion is made by the custodian of public records that a requested record is not a public record subject to public inspection or copying under this subsection, the requested record shall, nevertheless, not be disposed of for a period of 30 days after the date on which a written request to inspect or copy the record was served on or otherwise made to the custodian of public records by the person seeking access to the record. If a civil action is instituted within the 30-day period to enforce the provisions of this section with respect to the requested record, the custodian of public records may not dispose of the record except by order of a court of competent jurisdiction after notice to all affected parties.
 
-### (i) Duty to Maintain Records
+### (i)
 
 The absence of a civil action instituted for the purpose stated in paragraph (g) does not relieve the custodian of public records of the duty to maintain the record as a public record if the record is in fact a public record subject to public inspection and copying under this subsection and does not otherwise excuse or exonerate the custodian of public records from any unauthorized or unlawful disposition of such record.
 
@@ -47,15 +47,15 @@ The absence of a civil action instituted for the purpose stated in paragraph (g)
 
 ## (2) Remote Electronic Access
 
-### (a) Provision of Remote Access
+### (a)
 
 As an additional means of inspecting or copying public records, a custodian of public records may provide access to public records by remote electronic means, provided exempt or confidential information is not disclosed.
 
-### (b) Safeguards Required
+### (b)
 
 The custodian of public records shall provide safeguards to protect the contents of public records from unauthorized remote electronic access or alteration and to prevent the disclosure or modification of those portions of public records which are exempt or confidential from subsection (1) or s. 24, Art. I of the State Constitution.
 
-### (c) Fees for Remote Access
+### (c)
 
 Unless otherwise required by law, the custodian of public records may charge a fee for remote electronic access, granted under a contractual arrangement with a user, which fee may include the direct and indirect costs of providing such access. Fees for remote electronic access provided to the general public shall be in accordance with the provisions of this section.
 
@@ -63,19 +63,19 @@ Unless otherwise required by law, the custodian of public records may charge a f
 
 ## (3) Photographing Public Records
 
-### (a) Right to Photograph
+### (a)
 
 Any person shall have the right of access to public records for the purpose of making photographs of the record while such record is in the possession, custody, and control of the custodian of public records.
 
-### (b) Scope of Photographing Rights
+### (b)
 
 This subsection applies to the making of photographs in the conventional sense by use of a camera device to capture images of public records but excludes the duplication of microfilm in the possession of the clerk of the circuit court where a copy of the microfilm may be made available by the clerk.
 
-### (c) Supervision and Rules
+### (c)
 
 Photographing public records shall be done under the supervision of the custodian of public records, who may adopt and enforce reasonable rules governing the photographing of such records.
 
-### (d) Location for Photographing
+### (d)
 
 Photographing of public records shall be done in the room where the public records are kept. If, in the judgment of the custodian of public records, this is impossible or impracticable, photographing shall be done in another room or place, as nearly adjacent as possible to the room where the public records are kept, to be determined by the custodian of public records. Where provision of another room or place for photographing is required, the expense of providing the same shall be paid by the person desiring to photograph the public record pursuant to paragraph (4)(e).
 
@@ -85,31 +85,31 @@ Photographing of public records shall be done in the room where the public recor
 
 The custodian of public records shall furnish a copy or a certified copy of the record upon payment of the fee prescribed by law. If a fee is not prescribed by law, the following fees are authorized:
 
-### (a) Standard Duplication Fees
+### (a)
 
-**1.** Up to 15 cents per one-sided copy for duplicated copies of not more than 14 inches by 8½ inches;
+1. Up to 15 cents per one-sided copy for duplicated copies of not more than 14 inches by 8½ inches;
 
-**2.** No more than an additional 5 cents for each two-sided copy; and
+2. No more than an additional 5 cents for each two-sided copy; and
 
-**3.** For all other copies, the actual cost of duplication of the public record.
+3. For all other copies, the actual cost of duplication of the public record.
 
-### (b) County Maps and Aerial Photographs
+### (b)
 
 The charge for copies of county maps or aerial photographs supplied by county constitutional officers may also include a reasonable charge for the labor and overhead associated with their duplication.
 
-### (c) Certified Copies
+### (c)
 
 An agency may charge up to $1 per copy for a certified copy of a public record.
 
-### (d) Special Service Charges
+### (d)
 
 If the nature or volume of public records requested to be inspected or copied pursuant to this subsection is such as to require extensive use of information technology resources or extensive clerical or supervisory assistance by personnel of the agency involved, or both, the agency may charge, in addition to the actual cost of duplication, a special service charge, which shall be reasonable and shall be based on the cost incurred for such extensive use of information technology resources or the labor cost of the personnel providing the service that is actually incurred by the agency or attributable to the agency for the clerical and supervisory assistance required, or both.
 
-### (e) Photographing Expenses and Supervision
+### (e)
 
-**1.** Where provision of another room or place is necessary to photograph public records, the expense of providing the same shall be paid by the person desiring to photograph the public records.
+1. Where provision of another room or place is necessary to photograph public records, the expense of providing the same shall be paid by the person desiring to photograph the public records.
 
-**2.** The custodian of public records may charge the person making the photographs for supervision services at a rate of compensation to be agreed upon by the person desiring to make the photographs and the custodian of public records. If they fail to agree as to the appropriate charge, the charge shall be determined by the custodian of public records.
+2. The custodian of public records may charge the person making the photographs for supervision services at a rate of compensation to be agreed upon by the person desiring to make the photographs and the custodian of public records. If they fail to agree as to the appropriate charge, the charge shall be determined by the custodian of public records.
 
 ---
 
@@ -146,44 +146,3 @@ After receiving a request to inspect or copy a record, an agency may not respond
 ## Legislative History
 
 s. 7, ch. 67-125; s. 4, ch. 75-225; s. 2, ch. 77-60; s. 2, ch. 77-75; s. 2, ch. 77-94; s. 2, ch. 77-156; s. 2, ch. 78-81; ss. 2, 4, 6, ch. 79-187; s. 2, ch. 80-273; s. 1, ch. 81-245; s. 1, ch. 82-95; s. 36, ch. 82-243; s. 6, ch. 83-215; s. 2, ch. 83-269; s. 1, ch. 83-286; s. 5, ch. 84-298; s. 1, ch. 85-18; s. 1, ch. 85-45; s. 1, ch. 85-73; s. 1, ch. 85-86; s. 7, ch. 85-152; s. 1, ch. 85-177; s. 4, ch. 85-301; s. 2, ch. 86-11; s. 1, ch. 86-21; s. 1, ch. 86-109; s. 2, ch. 87-399; s. 2, ch. 88-188; s. 1, ch. 88-384; s. 1, ch. 89-29; s. 7, ch. 89-55; s. 1, ch. 89-80; s. 1, ch. 89-275; s. 2, ch. 89-283; s. 2, ch. 89-350; s. 1, ch. 89-531; s. 1, ch. 90-43; s. 63, ch. 90-136; s. 2, ch. 90-196; s. 4, ch. 90-211; s. 24, ch. 90-306; ss. 22, 26, ch. 90-344; s. 116, ch. 90-360; s. 78, ch. 91-45; s. 11, ch. 91-57; s. 1, ch. 91-71; s. 1, ch. 91-96; s. 1, ch. 91-130; s. 1, ch. 91-149; s. 1, ch. 91-219; s. 1, ch. 91-288; ss. 43, 45, ch. 92-58; s. 90, ch. 92-152; s. 59, ch. 92-289; s. 217, ch. 92-303; s. 1, ch. 93-87; s. 2, ch. 93-232; s. 3, ch. 93-404; s. 4, ch. 93-405; s. 4, ch. 94-73; s. 1, ch. 94-128; s. 3, ch. 94-130; s. 67, ch. 94-164; s. 1, ch. 94-176; s. 1419, ch. 95-147; ss. 1, 3, ch. 95-170; s. 4, ch. 95-207; s. 1, ch. 95-320; ss. 1, 2, 3, 5, 6, 7, 8, 9, 11, 12, 14, 15, 16, 18, 19, 20, 22, 23, 24, 25, 26, 29, 30, 31, 32, 33, 34, 35, 36, ch. 95-398; s. 1, ch. 95-399; s. 121, ch. 95-418; s. 3, ch. 96-178; s. 1, ch. 96-230; s. 5, ch. 96-268; s. 4, ch. 96-290; s. 41, ch. 96-406; s. 18, ch. 96-410; s. 1, ch. 97-185; s. 1, ch. 98-9; s. 7, ch. 98-137; s. 1, ch. 98-255; s. 1, ch. 98-259; s. 128, ch. 98-403; s. 2, ch. 99-201; s. 27, ch. 2000-164; s. 54, ch. 2000-349; s. 1, ch. 2001-87; s. 1, ch. 2001-108; s. 1, ch. 2001-249; s. 29, ch. 2001-261; s. 33, ch. 2001-266; s. 1, ch. 2001-364; s. 1, ch. 2002-67; ss. 1, 3, ch. 2002-257; s. 2, ch. 2002-391; s. 11, ch. 2003-1; s. 1, ch. 2003-100; ss. 1, 2, ch. 2003-110; s. 1, ch. 2003-137; ss. 1, 2, ch. 2003-157; ss. 1, 2, ch. 2004-9; ss. 1, 2, ch. 2004-32; ss. 1, 2, ch. 2004-62; ss. 1, 3, ch. 2004-95; s. 7, ch. 2004-335; ss. 2, 3, 4, 5, 6, 7, 8, 9, 11, 12, 13, 14, 15, 16, 17, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 38, ch. 2005-251; s. 74, ch. 2005-277; s. 1, ch. 2007-39; ss. 2, 4, ch. 2007-251; s. 1, ch. 2021-173.
-
----
-
-## Related Statutes and References
-
-- **Florida Statutes § 119.011** - Definitions (Public Records)
-- **Florida Statutes § 119.071** - General exemptions from inspection or copying of public records
-- **Florida Statutes § 286.011** - Public meetings and records; public inspection (Sunshine Law)
-- **Florida Statutes § 102.168** - Contest of election
-- **Florida Constitution, Article I, § 24** - Access to public records and meetings
-- **Florida Rules of Criminal Procedure, Rule 3.220** - Discovery
-
----
-
-## Key Points Summary
-
-**For Citizens:**
-- Public records must be made available for inspection and copying
-- Custodians must respond promptly and in good faith
-- Fees are capped at 15¢ per one-sided copy (standard size)
-- If an exemption is claimed, the custodian must cite the specific statute
-
-**For Custodians:**
-- Must permit inspection at reasonable times under reasonable conditions
-- Must redact only exempt portions and provide the rest
-- Must provide written explanation of exemptions if requested
-- Cannot dispose of disputed records for 30 days after request
-- May charge special service fees for extensive requests
-
-**For Photographers:**
-- Citizens have the right to photograph public records
-- Must be done under supervision of custodian
-- Generally done in the records room or adjacent location
-
----
-
-**Document Information:**
-- **Statute:** Florida Statutes Chapter 119, Section 119.07
-- **Title:** Inspection and Copying of Records; Photographing Public Records; Fees; Exemptions
-- **Chapter:** Public Records
-- **Current through:** 2024 Legislative Session
