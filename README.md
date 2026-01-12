@@ -32,9 +32,9 @@ The Okaloosa County Sheriff's Office deployed a Flock Safety ALPR system with a 
 
 **Quick Links:**
 - [📊 View Analysis Findings](https://github.com/HistoryJunkie/OkaloosaALPR_AUDIT/blob/main/FINDINGS.md)
-- [💻 Notebooks](https://github.com/HistoryJunkie/OkaloosaALPR_AUDIT/blob/main/Jupyter_Notebooks/Okaloosa_Parser_CLEAN.ipynb)
+- [💻 Parsing Notebook](https://github.com/HistoryJunkie/OkaloosaALPR_AUDIT/blob/main/Jupyter_Notebooks/Okaloosa_Parser_CLEAN.ipynb)
 - [📁 Source Data](https://github.com/HistoryJunkie/OkaloosaALPR_AUDIT/tree/main/Source_Data)
-- [📈 Generated Data](https://github.com/HistoryJunkie/OkaloosaALPR_AUDIT/blob/main/Generated_Data/RAW-11_1_2025-12_8_2025-Okaloosa_County_FL_SO-Audit_EXTRACTED.csv)
+- [📈 Parsed Audit (CSV)](https://github.com/HistoryJunkie/OkaloosaALPR_AUDIT/blob/main/Generated_Data/RAW-11_1_2025-12_8_2025-Okaloosa_County_FL_SO-Audit_EXTRACTED.csv)
 - [📚 Supporting Documents](https://github.com/HistoryJunkie/OkaloosaALPR_AUDIT/tree/main/Supporting_Documents)
 
 ### Directory Descriptions
