@@ -30,17 +30,24 @@ The Okaloosa County Sheriff's Office deployed a Flock Safety ALPR system with a 
 └── README.md
 ```
 
+**Quick Links:**
+- [📊 View Analysis Findings](https://github.com/HistoryJunkie/OkaloosaALPR_AUDIT/blob/main/FINDINGS.md)
+- [💻 Analysis Notebook](https://github.com/HistoryJunkie/OkaloosaALPR_AUDIT/blob/main/Jupyter_Notebooks/Okaloosa_Parser_CLEAN.ipynb)
+- [📁 Source Data](https://github.com/HistoryJunkie/OkaloosaALPR_AUDIT/tree/main/Source_Data)
+- [📈 Generated Data (CSV)](https://github.com/HistoryJunkie/OkaloosaALPR_AUDIT/blob/main/Generated_Data/RAW-11_1_2025-12_8_2025-Okaloosa_County_FL_SO-Audit_EXTRACTED.csv)
+- [📚 Legal Documents](https://github.com/HistoryJunkie/OkaloosaALPR_AUDIT/tree/main/Supporting_Documents)
+
 ### Directory Descriptions
 
-- **Source_Data/**: Original audit documents obtained through public records requests, including the raw ALPR search audit log and sharing agency information.
+- **[Source_Data/](https://github.com/HistoryJunkie/OkaloosaALPR_AUDIT/tree/main/Source_Data)**: Original audit documents obtained through public records requests, including the raw ALPR search audit log and sharing agency information.
 
-- **Generated_Data/**: Processed data extracted from source documents. The CSV file contains parsed and structured audit log entries for analysis.
+- **[Generated_Data/](https://github.com/HistoryJunkie/OkaloosaALPR_AUDIT/tree/main/Generated_Data)**: Processed data extracted from source documents. The CSV file contains parsed and structured audit log entries for analysis.
 
-- **Jupyter_Notebooks/**: Analysis notebooks containing the data extraction, parsing, and analytical methods used to process the audit logs.
+- **[Jupyter_Notebooks/](https://github.com/HistoryJunkie/OkaloosaALPR_AUDIT/tree/main/Jupyter_Notebooks)**: Analysis notebooks containing the data extraction, parsing, and analytical methods used to process the audit logs.
 
-- **Supporting_Documents/**: Relevant legal statutes, guidelines, policy documents, and official statements that provide context for the analysis. Includes Florida statutes on ALPR usage, public records law, and privacy protections.
+- **[Supporting_Documents/](https://github.com/HistoryJunkie/OkaloosaALPR_AUDIT/tree/main/Supporting_Documents)**: Relevant legal statutes, guidelines, policy documents, and official statements that provide context for the analysis. Includes Florida statutes on ALPR usage, public records law, and privacy protections.
 
-- **FINDINGS.md**: Comprehensive analysis of discrepancies between stated policies and operational data, including retention practices, network scale, and accountability measures.
+- **[FINDINGS.md](https://github.com/HistoryJunkie/OkaloosaALPR_AUDIT/blob/main/FINDINGS.md)**: Comprehensive analysis of discrepancies between stated policies and operational data, including retention practices, network scale, and accountability measures.
 
 ## Data Sources
 
@@ -63,7 +70,7 @@ The analysis employs a systematic approach to examine audit log data:
 4. **Justification Analysis**: Categorization and evaluation of stated search reasons
 5. **Compliance Assessment**: Comparison of operational practices against stated policies and legal requirements
 
-Detailed methodology and code are available in `Jupyter_Notebooks/Okaloosa_Parser_CLEAN.ipynb`.
+Detailed methodology and code are available in [`Jupyter_Notebooks/Okaloosa_Parser_CLEAN.ipynb`](https://github.com/HistoryJunkie/OkaloosaALPR_AUDIT/blob/main/Jupyter_Notebooks/Okaloosa_Parser_CLEAN.ipynb).
 
 ## Key Findings
 
@@ -74,29 +81,29 @@ The analysis identified several areas of concern:
 - **Documentation Gaps**: 9 searches contained no stated justification in the required reason field
 - **Limited Accountability**: 100% redaction of officer identifiers and case numbers prevents verification of search legitimacy
 
-Full findings are documented in `FINDINGS.md`.
+Full findings are documented in [**FINDINGS.md**](https://github.com/HistoryJunkie/OkaloosaALPR_AUDIT/blob/main/FINDINGS.md).
 
 ## Legal Framework
 
 Florida law establishes specific requirements for ALPR system operation and data handling:
 
-- **FL Statute 316.0777**: Governs ALPR usage by law enforcement agencies
-- **FL Statute 316.0778**: Prohibits unauthorized ALPR data retention and sharing
-- **FL Statute 119**: Public records law requirements
-- **FL Statute 501.171**: Digital Bill of Rights establishing geolocation data as personally identifiable information
-- **FDLE Guidelines (2024)**: State-level best practices for ALPR deployment
+- **[FL Statute 316.0777](https://github.com/HistoryJunkie/OkaloosaALPR_AUDIT/blob/main/Supporting_Documents/FL_Statute_316.0777.md)**: Governs ALPR usage by law enforcement agencies
+- **[FL Statute 316.0778](https://github.com/HistoryJunkie/OkaloosaALPR_AUDIT/blob/main/Supporting_Documents/FL_Statute_316.0778.md)**: Prohibits unauthorized ALPR data retention and sharing
+- **[FL Statute 119](https://github.com/HistoryJunkie/OkaloosaALPR_AUDIT/blob/main/Supporting_Documents/FL_Statute_119.011.md)**: Public records law requirements
+- **[FL Statute 501.171](https://github.com/HistoryJunkie/OkaloosaALPR_AUDIT/blob/main/Supporting_Documents/FL_Statute_501.171.md)**: Digital Bill of Rights establishing geolocation data as personally identifiable information
+- **[FDLE Guidelines (2024)](https://github.com/HistoryJunkie/OkaloosaALPR_AUDIT/blob/main/Supporting_Documents/FDLE_ALPR_Guidelines_2024.md)**: State-level best practices for ALPR deployment
 
-All referenced statutes and guidelines are available in the `Supporting_Documents/` directory.
+All referenced statutes and guidelines are available in the [`Supporting_Documents/`](https://github.com/HistoryJunkie/OkaloosaALPR_AUDIT/tree/main/Supporting_Documents) directory.
 
 ## Usage
 
 To replicate or extend this analysis:
 
-1. Review the source audit data in `Source_Data/`
-2. Examine the data extraction and parsing methodology in `Jupyter_Notebooks/Okaloosa_Parser_CLEAN.ipynb`
-3. Access the structured data in `Generated_Data/` for further analysis
-4. Reference applicable legal frameworks in `Supporting_Documents/`
-5. Review comprehensive findings in `FINDINGS.md`
+1. Review the source audit data in [`Source_Data/`](https://github.com/HistoryJunkie/OkaloosaALPR_AUDIT/tree/main/Source_Data)
+2. Examine the data extraction and parsing methodology in [`Jupyter_Notebooks/Okaloosa_Parser_CLEAN.ipynb`](https://github.com/HistoryJunkie/OkaloosaALPR_AUDIT/blob/main/Jupyter_Notebooks/Okaloosa_Parser_CLEAN.ipynb)
+3. Access the structured data in [`Generated_Data/`](https://github.com/HistoryJunkie/OkaloosaALPR_AUDIT/tree/main/Generated_Data) for further analysis
+4. Reference applicable legal frameworks in [`Supporting_Documents/`](https://github.com/HistoryJunkie/OkaloosaALPR_AUDIT/tree/main/Supporting_Documents)
+5. Review comprehensive findings in [`FINDINGS.md`](https://github.com/HistoryJunkie/OkaloosaALPR_AUDIT/blob/main/FINDINGS.md)
 
 ## About This Project
 
