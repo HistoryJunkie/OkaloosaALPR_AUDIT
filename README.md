@@ -13,7 +13,7 @@ The Okaloosa County Sheriff's Office deployed a Flock Safety ALPR system with a 
 │   ├── RAW-11_1_2025-12_8_2025-Okaloosa_County_FL_SO-Audit.pdf
 │   └── RAW-Sharing_Agencies.pdf
 ├── Generated_Data/
-│   └── RAW-11_1_2025-12_8_2025-Okaloosa_County_FL_SO-Audit_EXTRACTED.csv
+│   └── 11_1_2025-12_8_2025-Okaloosa_County_FL_SO-Audit_EXTRACTED.csv
 ├── Jupyter_Notebooks/
 │   └── Okaloosa_Parser_CLEAN.ipynb
 ├── Supporting_Documents/
