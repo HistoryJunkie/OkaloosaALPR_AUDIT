@@ -1,0 +1,37 @@
+To Whom It May Concern:
+
+Pursuant to Florida's Public Records Law (Chapter 119, Florida Statutes), I request the following records:
+
+- Records Related to the Department's Flock Safety System:
+
+1. Organization Audit in Flock: The report should include data logged from the period of November 1, 2025, to the date this request is processed. Per Flock's documentation, the Organization Audit is available within the Insights tab and is defined as searches done within the agency.
+
+2. Network Audit in Flock: The report should include data logged from the period of November 1, 2025, to the date this request is processed. Per Flock's documentation, the Network Audit is available within the Insights tab and is defined as searches of the organization's Flock network by any agency in the Flock System.
+
+3. A list of network share settings that include:
+3a. Flock networks shared with me
+3b. Networks that I'm sharing
+
+- Clarification Regarding Requested Records:
+
+To be clear, I am requesting administrative audit logs and configuration settings that document system usage and network sharing arrangements. I am not requesting license plate images, photographs, or personal identifying information of vehicle owners that would be protected under F.S. 316.0777.
+
+The audit reports contain metadata about system usage (such as when searches occurred and network configuration data), which is distinct from the protected ALPR images and personal data. This administrative data does not reveal surveillance techniques or procedures under F.S. 119.071(2)(d), as it shows that the system was used, not how surveillance operations are conducted. Similarly, these audit logs are not active criminal intelligence or investigative information under F.S. 119.071(2)(c)(1), as they are administrative records about system usage rather than records of specific investigations.
+
+- Accommodation for Partial Exemptions:
+
+If any portion of the audit reports contains information that your department believes is exempt under Florida law, I respectfully request that you provide the records with appropriate redactions of only that specific exempt information, rather than withholding the records in their entirety. Florida's Public Records Law requires that exemptions be narrowly construed, and non-exempt portions of records must be disclosed even when some portions are exempt.
+
+As an alternative, I would be satisfied with the audit reports provided in aggregate form (e.g., total number of searches by date) if that would address any concerns about sensitive information.
+
+- Format and Delivery:
+
+Please provide records in their original electronic, machine-readable format. For example, please provide CSV or spreadsheet files where applicable. Please do not redirect me to your transparency portal.
+
+The requested documents will be made available to the general public, and this request is not being made for commercial purposes.
+
+In the event that there are fees, I would be grateful if you would inform me of the total charges in advance of fulfilling my request. I would prefer the request filled electronically, by e-mail attachment or Dropbox link.
+
+Thank you in advance for your anticipated cooperation in this matter. I look forward to receiving your response to this request within 10 business days, as Florida law requires. If you believe any portion of the requested records is exempt, please provide a detailed explanation identifying the specific exemption and how it applies to the specific data withheld.
+
+Respectfully,
