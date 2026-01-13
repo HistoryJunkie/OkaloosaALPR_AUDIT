@@ -2,6 +2,8 @@
 
 This repository contains an analysis of Automated License Plate Recognition (ALPR) search audit data from the Okaloosa County Sheriff's Office (OCSO) in Florida. The analysis examines operational practices, data retention patterns, and system usage against stated policies and applicable Florida law.
 
+The source data for this analysis came from [this post on Muckrock.](https://www.muckrock.com/foi/okaloosa-county-10449/florida-public-records-act-request-flock-safety-audit-okaloosa-county-sheriffs-department-199490/?fbclid=Iwb21leAPTJvdjbGNrA8yLGmV4dG4DYWVtAjExAHNydGMGYXBwX2lkDDM1MDY4NTUzMTcyOAABHlglCm4IRuenFb9a23rqELjG922FmZjGqOToBvcBl4dMkesEwURIkWlsYBxz_aem_48nRgmN1qusApbXzw9Am_w)
+
 ## Background
 
 The Okaloosa County Sheriff's Office deployed a Flock Safety ALPR system with a stated 30-day rolling data retention policy. This project analyzes audit logs from November 1, 2025 through December 8, 2025 to examine actual system usage patterns, data retention practices, and search behaviors.
