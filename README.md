@@ -91,8 +91,8 @@ Florida law establishes specific requirements for ALPR system operation and data
 - **[FL Statute 316.0777](https://github.com/HistoryJunkie/OkaloosaALPR_AUDIT/blob/main/Supporting_Documents/FL_Statute_316.0777.md)**: Governs ALPR usage by law enforcement agencies
 - **[FL Statute 316.0778](https://github.com/HistoryJunkie/OkaloosaALPR_AUDIT/blob/main/Supporting_Documents/FL_Statute_316.0778.md)**: Prohibits unauthorized ALPR data retention and sharing
 - **[FL Statute 119](https://github.com/HistoryJunkie/OkaloosaALPR_AUDIT/blob/main/Supporting_Documents/FL_Statute_119.011.md)**: Public records law requirements
-- **[FL Statute 501.171](https://github.com/HistoryJunkie/OkaloosaALPR_AUDIT/blob/main/Supporting_Documents/FL_Statute_501.171.md)**: Digital Bill of Rights establishing geolocation data as personally identifiable information
-- **[FDLE Guidelines (2024)](https://github.com/HistoryJunkie/OkaloosaALPR_AUDIT/blob/main/Supporting_Documents/FDLE_ALPR_Guidelines_2024.md)**: State-level best practices for ALPR deployment
+- **[FL Statute 501.171](https://github.com/HistoryJunkie/OkaloosaALPR_AUDIT/blob/main/Supporting_Documents/FL_Statute_501.171.md)**: Establishing geolocation data as personally identifiable information
+- **[FDLE Guidelines (2024)](https://github.com/HistoryJunkie/OkaloosaALPR_AUDIT/blob/main/Supporting_Documents/FDLE_ALPR_Guidelines_2024.md)**: State-level best guidelines for ALPR deployment
 
 All referenced statutes and guidelines are available in the [`Supporting_Documents/`](https://github.com/HistoryJunkie/OkaloosaALPR_AUDIT/tree/main/Supporting_Documents) directory.
 
