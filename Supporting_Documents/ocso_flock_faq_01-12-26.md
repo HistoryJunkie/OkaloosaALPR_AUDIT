@@ -1,6 +1,10 @@
 # OCSO Frequently Asked Flock Safety Questions and Answers
 
-**Source:** [https://www.sheriff-okaloosa.org/ocso-frequently-asked-flock-safety-questions-and-answers/](https://www.sheriff-okaloosa.org/ocso-frequently-asked-flock-safety-questions-and-answers/)
+**Source:** [Okaloosa County Sheriff's Office](https://www.sheriff-okaloosa.org/ocso-frequently-asked-flock-safety-questions-and-answers/)
+
+**Date:** Feb 17, 2022
+
+**Category:** News Releases
 
 ---
 
