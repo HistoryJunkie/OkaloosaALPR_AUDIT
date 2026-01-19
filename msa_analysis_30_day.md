@@ -1,6 +1,5 @@
 ## **Footage vs Customer Data Relationship**
 
-**Customer Data explicitly includes Footage** (MSA §1.3):
 - Customer Data = "data, media and content provided by Customer through the Services. **For the avoidance of doubt, the Customer Data will include the Footage.**"
 - Footage = "still images, video, audio and other data captured by the Flock Hardware or Customer Hardware" (MSA §1.10)
 
