@@ -1,0 +1,1013 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLOCK Safety ALPR Audit Report - Okaloosa County Sheriff's Office</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: white;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+        
+        /* Header */
+        .header {
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+        
+        .header h2 {
+            font-size: 1.5em;
+            font-weight: 400;
+            opacity: 0.9;
+        }
+        
+        /* Metadata Section */
+        .metadata {
+            background-color: #f8fafc;
+            padding: 30px 40px;
+            border-bottom: 2px solid #e2e8f0;
+        }
+        
+        .metadata-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        
+        .metadata-item {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .metadata-label {
+            font-size: 0.85em;
+            color: #64748b;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 5px;
+            font-weight: 600;
+        }
+        
+        .metadata-value {
+            font-size: 1.1em;
+            color: #1e293b;
+            font-weight: 500;
+        }
+        
+        /* Content Sections */
+        .content {
+            padding: 40px;
+        }
+        
+        .section {
+            margin-bottom: 50px;
+            page-break-inside: avoid;
+        }
+        
+        .section-title {
+            font-size: 1.8em;
+            color: #1e293b;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #3b82f6;
+        }
+        
+        .subsection-title {
+            font-size: 1.3em;
+            color: #334155;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+        
+        /* Executive Summary Dashboard */
+        .dashboard {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .metric-card {
+            background: white;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        
+        .metric-card.warning {
+            border-left: 4px solid #f59e0b;
+            background-color: #fffbeb;
+        }
+        
+        .metric-card.alert {
+            border-left: 4px solid #ef4444;
+            background-color: #fef2f2;
+        }
+        
+        .metric-card.success {
+            border-left: 4px solid #10b981;
+            background-color: #f0fdf4;
+        }
+        
+        .metric-label {
+            font-size: 0.9em;
+            color: #64748b;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 8px;
+        }
+        
+        .metric-value {
+            font-size: 2em;
+            font-weight: 700;
+            color: #1e293b;
+            margin-bottom: 5px;
+        }
+        
+        .metric-percentage {
+            font-size: 1.1em;
+            color: #64748b;
+        }
+        
+        .metric-status {
+            margin-top: 10px;
+            font-weight: 600;
+        }
+        
+        .metric-status.ok {
+            color: #10b981;
+        }
+        
+        .metric-status.warning {
+            color: #f59e0b;
+        }
+        
+        .metric-status.alert {
+            color: #ef4444;
+        }
+        
+        /* Tables */
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background-color: white;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        
+        .data-table th {
+            background-color: #1e3a8a;
+            color: white;
+            padding: 12px;
+            text-align: left;
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 0.85em;
+            letter-spacing: 0.5px;
+        }
+        
+        .data-table td {
+            padding: 12px;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        
+        .data-table tr:hover {
+            background-color: #f8fafc;
+        }
+        
+        .data-table tr:last-child td {
+            border-bottom: none;
+        }
+        
+        .data-table td:nth-child(3),
+        .data-table td:nth-child(4) {
+            text-align: right;
+        }
+        
+        .data-table th:nth-child(3),
+        .data-table th:nth-child(4) {
+            text-align: right;
+        }
+        
+        /* Key Findings Box */
+        .findings-box {
+            background-color: #fef3c7;
+            border-left: 4px solid #f59e0b;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        
+        .findings-box h3 {
+            color: #92400e;
+            margin-bottom: 15px;
+        }
+        
+        .findings-box ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .findings-box li {
+            padding: 8px 0;
+            padding-left: 25px;
+            position: relative;
+        }
+        
+        .findings-box li:before {
+            content: "⚠";
+            position: absolute;
+            left: 0;
+            color: #f59e0b;
+            font-weight: bold;
+        }
+        
+        .findings-box li.success:before {
+            content: "✓";
+            color: #10b981;
+        }
+        
+        /* Statistics Grid */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+        
+        .stat-item {
+            background-color: #f8fafc;
+            padding: 15px;
+            border-radius: 6px;
+            border: 1px solid #e2e8f0;
+        }
+        
+        .stat-label {
+            font-size: 0.85em;
+            color: #64748b;
+            margin-bottom: 5px;
+        }
+        
+        .stat-value {
+            font-size: 1.5em;
+            font-weight: 600;
+            color: #1e293b;
+        }
+        
+        /* Recommendations */
+        .recommendation {
+            background-color: white;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+        }
+        
+        .recommendation-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        
+        .recommendation-title {
+            font-size: 1.2em;
+            font-weight: 600;
+            color: #1e293b;
+        }
+        
+        .priority-badge {
+            padding: 5px 12px;
+            border-radius: 12px;
+            font-size: 0.85em;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+        
+        .priority-badge.high {
+            background-color: #fef2f2;
+            color: #ef4444;
+            border: 1px solid #fecaca;
+        }
+        
+        .priority-badge.medium {
+            background-color: #fffbeb;
+            color: #f59e0b;
+            border: 1px solid #fde68a;
+        }
+        
+        .priority-badge.low {
+            background-color: #f0fdf4;
+            color: #10b981;
+            border: 1px solid #bbf7d0;
+        }
+        
+        .recommendation-content {
+            color: #475569;
+            line-height: 1.6;
+        }
+        
+        .recommendation-content strong {
+            color: #1e293b;
+            display: block;
+            margin-bottom: 5px;
+        }
+        
+        /* Footer */
+        .footer {
+            background-color: #1e293b;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9em;
+        }
+        
+        /* Table of Contents */
+        .toc {
+            background-color: #f8fafc;
+            border: 1px solid #e2e8f0;
+            padding: 20px;
+            margin-bottom: 30px;
+            border-radius: 8px;
+        }
+        
+        .toc h3 {
+            margin-bottom: 15px;
+            color: #1e293b;
+        }
+        
+        .toc ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .toc li {
+            padding: 5px 0;
+        }
+        
+        .toc a {
+            color: #3b82f6;
+            text-decoration: none;
+        }
+        
+        .toc a:hover {
+            text-decoration: underline;
+        }
+        
+        /* Print Styles */
+        @media print {
+            body {
+                background-color: white;
+                padding: 0;
+            }
+            
+            .container {
+                box-shadow: none;
+            }
+            
+            .section {
+                page-break-inside: avoid;
+            }
+            
+            .toc {
+                page-break-after: always;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <h1>FLOCK Safety ALPR Audit Report</h1>
+            <h2>Okaloosa County Sheriff's Office</h2>
+        </div>
+        
+        <!-- Metadata -->
+        <div class="metadata">
+            <div class="metadata-grid">
+                <div class="metadata-item">
+                    <span class="metadata-label">Report Generated</span>
+                    <span class="metadata-value">2026-01-22 17:40:40</span>
+                </div>
+                <div class="metadata-item">
+                    <span class="metadata-label">Data Period</span>
+                    <span class="metadata-value">11/01/2025 08:51 AM to 12/09/2025 05:48 AM</span>
+                </div>
+                <div class="metadata-item">
+                    <span class="metadata-label">Total Records</span>
+                    <span class="metadata-value">7,272</span>
+                </div>
+                <div class="metadata-item">
+                    <span class="metadata-label">Source File</span>
+                    <span class="metadata-value">11_1_2025-12_8_2025-Okaloosa_County_FL_SO-Audit_EXTRACTED.csv</span>
+                </div>
+            </div>
+            
+            <div class="metadata-grid" style="margin-top: 20px;">
+                <div class="metadata-item">
+                    <span class="metadata-label">Retention Threshold</span>
+                    <span class="metadata-value">30 days</span>
+                </div>
+                <div class="metadata-item">
+                    <span class="metadata-label">Data Age Threshold</span>
+                    <span class="metadata-value">30 days</span>
+                </div>
+                <div class="metadata-item">
+                    <span class="metadata-label">Filters Applied</span>
+                    <span class="metadata-value">None</span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Main Content -->
+        <div class="content">
+            <!-- Table of Contents -->
+            <div class="toc">
+                <h3>Report Contents</h3>
+                <ul>
+                    <li><a href="#executive-summary">1. Executive Summary</a></li>
+                    <li><a href="#dataset-overview">2. Dataset Overview & Statistics</a></li>
+                    <li><a href="#search-patterns">3. Search Patterns Analysis</a></li>
+                    <li><a href="#retention-violations">4. Retention Policy Violations</a></li>
+                    <li><a href="#data-age-violations">5. Data Age Violations</a></li>
+                    <li><a href="#fdle-compliance">6. FDLE Compliance Analysis</a></li>
+                    <li><a href="#recommendations">7. Recommendations</a></li>
+                </ul>
+            </div>
+            
+            <!-- Executive Summary -->
+            <div class="section" id="executive-summary">
+                <h2 class="section-title">1. Executive Summary</h2>
+                
+                <div class="dashboard">
+                    <div class="metric-card">
+                        <div class="metric-label">Total Searches</div>
+                        <div class="metric-value">7,272</div>
+                        <div class="metric-status ok">✓ Dataset Loaded</div>
+                    </div>
+                    
+                    <div class="metric-card warning">
+                        <div class="metric-label">Retention Violations</div>
+                        <div class="metric-value">463</div>
+                        <div class="metric-percentage">6.37% of searches</div>
+                        <div class="metric-status warning">⚠ Exceeds 30 days</div>
+                    </div>
+                    
+                    <div class="metric-card alert">
+                        <div class="metric-label">Data Age Violations</div>
+                        <div class="metric-value">32</div>
+                        <div class="metric-percentage">0.44% of searches</div>
+                        <div class="metric-status alert">⚠ Data >30 days old</div>
+                    </div>
+                    
+                    <div class="metric-card warning">
+                        <div class="metric-label">Non-FDLE Compliant</div>
+                        <div class="metric-value">502</div>
+                        <div class="metric-percentage">6.90% of searches</div>
+                        <div class="metric-status warning">⚠ Estimated</div>
+                    </div>
+                </div>
+                
+                <div class="findings-box">
+                    <h3>Key Findings</h3>
+                    <ul>
+                        <li>6.37% of searches (463 total) exceed the 30-day retention policy</li>
+                        <li>32 searches accessed data older than 30 days</li>
+                        <li>Approximately 6.90% of searches (502 total) may not comply with FDLE guidelines</li>
+                        <li>1 records have data quality issues requiring review</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Dataset Overview -->
+            <div class="section" id="dataset-overview">
+                <h2 class="section-title">2. Dataset Overview & Statistics</h2>
+                
+                <h3 class="subsection-title">Lookback Duration Statistics</h3>
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-label">Mean Lookback</div>
+                        <div class="stat-value">6.81 days</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-label">Median Lookback</div>
+                        <div class="stat-value">1.00 days</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-label">Maximum Lookback</div>
+                        <div class="stat-value">524.12 days</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-label">Total Devices Searched</div>
+                        <div class="stat-value">100,443,890</div>
+                    </div>
+                </div>
+                
+                <h3 class="subsection-title">Search Window Statistics</h3>
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-label">Mean Window</div>
+                        <div class="stat-value">151.86 hrs</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-label">Median Window</div>
+                        <div class="stat-value">24.00 hrs</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-label">Maximum Window</div>
+                        <div class="stat-value">17913.06 hrs</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Search Patterns -->
+            <div class="section" id="search-patterns">
+                <h2 class="section-title">3. Search Patterns Analysis</h2>
+                
+                <h3 class="subsection-title">Search Type Breakdown</h3>
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Search Type</th>
+                            <th>Count</th>
+                            <th>Percentage</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>lookup</td><td>5,504</td><td>75.69%</td></tr>
+<tr><td>search</td><td>1,516</td><td>20.85%</td></tr>
+<tr><td>freeform</td><td>186</td><td>2.56%</td></tr>
+<tr><td>visual</td><td>51</td><td>0.70%</td></tr>
+<tr><td>multiGeo</td><td>12</td><td>0.17%</td></tr>
+<tr><td>convoy</td><td>3</td><td>0.04%</td></tr>
+
+                    </tbody>
+                </table>
+                
+                <h3 class="subsection-title">Top 30 Search Reasons</h3>
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Reason</th>
+                            <th>Count</th>
+                            <th>Percentage</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>1</td><td>Investigation</td><td>627</td><td>8.62%</td></tr>
+<tr><td>2</td><td>bolo</td><td>442</td><td>6.08%</td></tr>
+<tr><td>3</td><td>warrants</td><td>413</td><td>5.68%</td></tr>
+<tr><td>4</td><td>investigation</td><td>283</td><td>3.89%</td></tr>
+<tr><td>5</td><td>warrant</td><td>282</td><td>3.88%</td></tr>
+<tr><td>6</td><td>WARRANT</td><td>245</td><td>3.37%</td></tr>
+<tr><td>7</td><td>stolen</td><td>237</td><td>3.26%</td></tr>
+<tr><td>8</td><td>theft</td><td>225</td><td>3.09%</td></tr>
+<tr><td>9</td><td>Warrant</td><td>219</td><td>3.01%</td></tr>
+<tr><td>10</td><td>Inv</td><td>194</td><td>2.67%</td></tr>
+<tr><td>11</td><td>Criminal Investigation</td><td>151</td><td>2.08%</td></tr>
+<tr><td>12</td><td>disturbance</td><td>114</td><td>1.57%</td></tr>
+<tr><td>13</td><td>wanted person</td><td>109</td><td>1.50%</td></tr>
+<tr><td>14</td><td>Stolen</td><td>93</td><td>1.28%</td></tr>
+<tr><td>15</td><td>welfare check</td><td>88</td><td>1.21%</td></tr>
+<tr><td>16</td><td>suicide</td><td>84</td><td>1.16%</td></tr>
+<tr><td>17</td><td>BOLO</td><td>81</td><td>1.11%</td></tr>
+<tr><td>18</td><td>stolen vehicle</td><td>80</td><td>1.10%</td></tr>
+<tr><td>19</td><td>locate missing person</td><td>80</td><td>1.10%</td></tr>
+<tr><td>20</td><td>inv</td><td>76</td><td>1.05%</td></tr>
+<tr><td>21</td><td>Traffic Investigation</td><td>67</td><td>0.92%</td></tr>
+<tr><td>22</td><td>Active case</td><td>66</td><td>0.91%</td></tr>
+<tr><td>23</td><td>patrol</td><td>66</td><td>0.91%</td></tr>
+<tr><td>24</td><td>Patrol</td><td>65</td><td>0.89%</td></tr>
+<tr><td>25</td><td>Warrants</td><td>58</td><td>0.80%</td></tr>
+<tr><td>26</td><td>Suspicious</td><td>51</td><td>0.70%</td></tr>
+<tr><td>27</td><td>narcotics investigation</td><td>51</td><td>0.70%</td></tr>
+<tr><td>28</td><td>agg assault</td><td>47</td><td>0.65%</td></tr>
+<tr><td>29</td><td>DWLSR</td><td>46</td><td>0.63%</td></tr>
+<tr><td>30</td><td>Missing Person</td><td>45</td><td>0.62%</td></tr>
+
+                    </tbody>
+                </table>
+            </div>
+            
+            <!-- Retention Violations -->
+            <div class="section" id="retention-violations">
+                <h2 class="section-title">4. Retention Policy Violations</h2>
+                
+                <div class="stats-grid" style="margin-bottom: 30px;">
+                    <div class="stat-item">
+                        <div class="stat-label">Violations</div>
+                        <div class="stat-value">463</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-label">Percentage</div>
+                        <div class="stat-value">6.37%</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-label">Mean Lookback</div>
+                        <div class="stat-value">54.16 days</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-label">Median Lookback</div>
+                        <div class="stat-value">30.03 days</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-label">Maximum Lookback</div>
+                        <div class="stat-value">524.12 days</div>
+                    </div>
+                </div>
+                
+                <h3 class="subsection-title">Top Reasons for Violations</h3>
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Reason</th>
+                            <th>Count</th>
+                            <th>Percentage</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>1</td><td>patrol</td><td>42</td><td>9.07%</td></tr>
+<tr><td>2</td><td>Investigation</td><td>27</td><td>5.83%</td></tr>
+<tr><td>3</td><td>stolen</td><td>22</td><td>4.75%</td></tr>
+<tr><td>4</td><td>25-138337</td><td>21</td><td>4.54%</td></tr>
+<tr><td>5</td><td>warrant</td><td>20</td><td>4.32%</td></tr>
+<tr><td>6</td><td>locate missing person</td><td>17</td><td>3.67%</td></tr>
+<tr><td>7</td><td>warrant service</td><td>17</td><td>3.67%</td></tr>
+<tr><td>8</td><td>Warrant</td><td>16</td><td>3.46%</td></tr>
+<tr><td>9</td><td>bolo</td><td>14</td><td>3.02%</td></tr>
+<tr><td>10</td><td>narcotics investigation</td><td>13</td><td>2.81%</td></tr>
+<tr><td>11</td><td>Criminal Investigation</td><td>11</td><td>2.38%</td></tr>
+<tr><td>12</td><td>Inv</td><td>11</td><td>2.38%</td></tr>
+<tr><td>13</td><td>disturbance</td><td>10</td><td>2.16%</td></tr>
+<tr><td>14</td><td>DWLSR</td><td>10</td><td>2.16%</td></tr>
+<tr><td>15</td><td>BOLO</td><td>8</td><td>1.73%</td></tr>
+<tr><td>16</td><td>investigation</td><td>8</td><td>1.73%</td></tr>
+<tr><td>17</td><td>CC Skimming</td><td>8</td><td>1.73%</td></tr>
+<tr><td>18</td><td>Criminal investigation</td><td>7</td><td>1.51%</td></tr>
+<tr><td>19</td><td>missing person</td><td>6</td><td>1.30%</td></tr>
+<tr><td>20</td><td>stolen car</td><td>6</td><td>1.30%</td></tr>
+
+                    </tbody>
+                </table>
+                
+                <h3 class="subsection-title">Oldest Violations (Top 10)</h3>
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Lookback Period</th>
+                            <th>Search Time</th>
+                            <th>Reason</th>
+                            <th>Type</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+            <td>1</td>
+            <td>524.1 days</td>
+            <td>11/25/2025, 05:16:05 PM UTC</td>
+            <td>stolen tag</td>
+            <td>lookup</td>
+        </tr>
+<tr>
+            <td>2</td>
+            <td>524.1 days</td>
+            <td>11/25/2025, 05:15:34 PM UTC</td>
+            <td>stolen tag</td>
+            <td>lookup</td>
+        </tr>
+<tr>
+            <td>3</td>
+            <td>364.0 days</td>
+            <td>11/29/2025, 04:36:25 PM UTC</td>
+            <td>DWLSR</td>
+            <td>lookup</td>
+        </tr>
+<tr>
+            <td>4</td>
+            <td>364.0 days</td>
+            <td>11/29/2025, 03:58:13 PM UTC</td>
+            <td>DWLSR</td>
+            <td>lookup</td>
+        </tr>
+<tr>
+            <td>5</td>
+            <td>364.0 days</td>
+            <td>11/29/2025, 03:47:46 PM UTC</td>
+            <td>DWLSR</td>
+            <td>lookup</td>
+        </tr>
+<tr>
+            <td>6</td>
+            <td>362.1 days</td>
+            <td>12/08/2025, 02:00:44 PM UTC</td>
+            <td>Active warrant</td>
+            <td>lookup</td>
+        </tr>
+<tr>
+            <td>7</td>
+            <td>358.1 days</td>
+            <td>12/03/2025, 01:33:46 PM UTC</td>
+            <td>HTO</td>
+            <td>lookup</td>
+        </tr>
+<tr>
+            <td>8</td>
+            <td>338.0 days</td>
+            <td>12/03/2025, 01:42:45 PM UTC</td>
+            <td>HTO</td>
+            <td>lookup</td>
+        </tr>
+<tr>
+            <td>9</td>
+            <td>326.1 days</td>
+            <td>11/23/2025, 12:51:30 PM UTC</td>
+            <td>flee elude</td>
+            <td>lookup</td>
+        </tr>
+<tr>
+            <td>10</td>
+            <td>311.2 days</td>
+            <td>11/09/2025, 03:05:14 AM UTC</td>
+            <td>stolen</td>
+            <td>lookup</td>
+        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+            
+            <!-- Data Age Violations -->
+            <div class="section" id="data-age-violations">
+                <h2 class="section-title">5. Data Age Violations</h2>
+                
+                <div class="stats-grid" style="margin-bottom: 30px;">
+                    <div class="stat-item">
+                        <div class="stat-label">Violations</div>
+                        <div class="stat-value">32</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-label">Percentage</div>
+                        <div class="stat-value">0.44%</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-label">Mean Data Age</div>
+                        <div class="stat-value">90.39 days</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-label">Median Data Age</div>
+                        <div class="stat-value">44.03 days</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-label">Maximum Data Age</div>
+                        <div class="stat-value">263.80 days</div>
+                    </div>
+                </div>
+                
+                <h3 class="subsection-title">Reasons for Violations</h3>
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Reason</th>
+                            <th>Count</th>
+                            <th>Percentage</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Investigation</td><td>16</td><td>50.00%</td></tr>
+<tr><td>narcotics investigation</td><td>6</td><td>18.75%</td></tr>
+<tr><td>Follow Up</td><td>2</td><td>6.25%</td></tr>
+<tr><td>missing person</td><td>1</td><td>3.12%</td></tr>
+<tr><td>patrol</td><td>1</td><td>3.12%</td></tr>
+<tr><td>Criminal Investigation</td><td>1</td><td>3.12%</td></tr>
+<tr><td>follow up</td><td>1</td><td>3.12%</td></tr>
+<tr><td>stolen vehicle</td><td>1</td><td>3.12%</td></tr>
+<tr><td>agg assault</td><td>1</td><td>3.12%</td></tr>
+<tr><td>WARRANTS</td><td>1</td><td>3.12%</td></tr>
+<tr><td>Warrant service</td><td>1</td><td>3.12%</td></tr>
+
+                    </tbody>
+                </table>
+                
+                <h3 class="subsection-title">Oldest Data Accessed (Top 10)</h3>
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Data Age</th>
+                            <th>Search Time</th>
+                            <th>Reason</th>
+                            <th>Type</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+            <td>1</td>
+            <td>263.8 days</td>
+            <td>11/02/2025, 09:19:04 PM UTC</td>
+            <td>follow up</td>
+            <td>search</td>
+        </tr>
+<tr>
+            <td>2</td>
+            <td>263.8 days</td>
+            <td>11/02/2025, 09:08:04 PM UTC</td>
+            <td>Follow Up</td>
+            <td>search</td>
+        </tr>
+<tr>
+            <td>3</td>
+            <td>263.8 days</td>
+            <td>11/02/2025, 09:07:32 PM UTC</td>
+            <td>Follow Up</td>
+            <td>lookup</td>
+        </tr>
+<tr>
+            <td>4</td>
+            <td>197.2 days</td>
+            <td>11/02/2025, 09:29:44 AM UTC</td>
+            <td>Criminal Investigation</td>
+            <td>search</td>
+        </tr>
+<tr>
+            <td>5</td>
+            <td>160.0 days</td>
+            <td>12/04/2025, 09:26:57 PM UTC</td>
+            <td>Warrant service</td>
+            <td>lookup</td>
+        </tr>
+<tr>
+            <td>6</td>
+            <td>141.8 days</td>
+            <td>11/14/2025, 05:30:23 PM UTC</td>
+            <td>narcotics investigation</td>
+            <td>lookup</td>
+        </tr>
+<tr>
+            <td>7</td>
+            <td>134.0 days</td>
+            <td>11/06/2025, 10:39:11 PM UTC</td>
+            <td>narcotics investigation</td>
+            <td>lookup</td>
+        </tr>
+<tr>
+            <td>8</td>
+            <td>133.0 days</td>
+            <td>11/05/2025, 10:20:52 PM UTC</td>
+            <td>narcotics investigation</td>
+            <td>lookup</td>
+        </tr>
+<tr>
+            <td>9</td>
+            <td>132.7 days</td>
+            <td>11/05/2025, 03:34:43 PM UTC</td>
+            <td>narcotics investigation</td>
+            <td>lookup</td>
+        </tr>
+<tr>
+            <td>10</td>
+            <td>131.9 days</td>
+            <td>11/04/2025, 08:27:14 PM UTC</td>
+            <td>narcotics investigation</td>
+            <td>lookup</td>
+        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+            
+            <!-- FDLE Compliance -->
+            <div class="section" id="fdle-compliance">
+                <h2 class="section-title">6. FDLE Compliance Analysis</h2>
+                
+                <div style="background-color: #f8fafc; padding: 20px; border-left: 4px solid #3b82f6; margin-bottom: 30px; border-radius: 4px;">
+                    <p><strong>FDLE Guidelines:</strong> "ALPRs assist law enforcement agencies in detection, identification and recovery of stolen vehicles, wanted persons, missing and/or endangered children/adults, and persons who have committed serious and violent crimes."</p>
+                </div>
+                
+                <h3 class="subsection-title">Potentially Non-Compliant Search Categories</h3>
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Category</th>
+                            <th>Count</th>
+                            <th>Percentage</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Patrol</td><td>131</td><td>1.80%</td></tr>
+<tr><td>Traffic</td><td>47</td><td>0.65%</td></tr>
+<tr><td>Welfare</td><td>114</td><td>1.57%</td></tr>
+<tr><td>Disturbance</td><td>135</td><td>1.86%</td></tr>
+<tr><td>Training</td><td>34</td><td>0.47%</td></tr>
+<tr><td>Baker Act</td><td>12</td><td>0.17%</td></tr>
+<tr><td>Animal</td><td>12</td><td>0.17%</td></tr>
+<tr><td>Trespassing</td><td>17</td><td>0.23%</td></tr>
+
+                    </tbody>
+                </table>
+                
+                <div style="background-color: #fffbeb; padding: 15px; border-left: 4px solid #f59e0b; margin-top: 20px; border-radius: 4px;">
+                    <p><strong>Note:</strong> These searches represent routine enforcement, welfare matters, or non-criminal activities that may fall outside FDLE's scope of "serious and violent crimes." Additional review recommended.</p>
+                </div>
+            </div>
+            
+            <!-- Recommendations -->
+            <div class="section" id="recommendations">
+                <h2 class="section-title">7. Recommendations</h2>
+                
+                <div class="recommendation">
+                    <div class="recommendation-header">
+                        <span class="recommendation-title">1. Review Retention Violations</span>
+                        <span class="priority-badge high">High Priority</span>
+                    </div>
+                    <div class="recommendation-content">
+                        <strong>Finding:</strong> 6.37% of searches exceed 30-day retention limit<br>
+                        <strong>Action:</strong> Review 463 searches with excessive lookback periods. Implement automated alerts for searches exceeding policy limits.
+                    </div>
+                </div>
+                
+                <div class="recommendation">
+                    <div class="recommendation-header">
+                        <span class="recommendation-title">2. Investigate Data Age Violations</span>
+                        <span class="priority-badge high">High Priority</span>
+                    </div>
+                    <div class="recommendation-content">
+                        <strong>Finding:</strong> 32 searches accessed data older than 30 days<br>
+                        <strong>Action:</strong> Investigate these searches immediately. Verify data retention policy compliance. Consider implementing technical controls to prevent access to expired data.
+                    </div>
+                </div>
+                
+                <div class="recommendation">
+                    <div class="recommendation-header">
+                        <span class="recommendation-title">3. FDLE Compliance Review</span>
+                        <span class="priority-badge medium">Medium Priority</span>
+                    </div>
+                    <div class="recommendation-content">
+                        <strong>Finding:</strong> Approximately 6.90% of searches may not align with FDLE guidelines<br>
+                        <strong>Action:</strong> Review 502 potentially non-compliant searches. Provide additional training on appropriate ALPR use cases. Consider restricting certain search reasons.
+                    </div>
+                </div>
+                
+                <div class="recommendation">
+                    <div class="recommendation-header">
+                        <span class="recommendation-title">4. Standardize Data Entry</span>
+                        <span class="priority-badge medium">Medium Priority</span>
+                    </div>
+                    <div class="recommendation-content">
+                        <strong>Finding:</strong> 1 data quality issues detected. High variability in reason codes.<br>
+                        <strong>Action:</strong> Implement dropdown menus for reason codes to ensure consistency. Review and correct existing anomalous records.
+                    </div>
+                </div>
+                
+                <div class="recommendation">
+                    <div class="recommendation-header">
+                        <span class="recommendation-title">5. Improve Audit Process</span>
+                        <span class="priority-badge low">Low Priority</span>
+                    </div>
+                    <div class="recommendation-content">
+                        <strong>Finding:</strong> Current manual sampling represents <0.3% of dataset<br>
+                        <strong>Action:</strong> Implement automated screening analyzing 100% of searches in seconds. Focus manual review on flagged violations only. This approach provides comprehensive coverage while focusing human effort where needed.
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Footer -->
+        <div class="footer">
+            <p>This report was generated automatically from FLOCK Safety ALPR audit data.</p>
+            <p>For questions or concerns, contact your system administrator.</p>
+        </div>
+    </div>
+</body>
+</html>
