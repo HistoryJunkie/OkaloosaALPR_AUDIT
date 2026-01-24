@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OCSO Flock Safety Analysis</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f5;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        h1 {
+            color: #1a1a1a;
+            margin-bottom: 10px;
+            font-size: 2.5em;
+        }
+        
+        h2 {
+            color: #2c3e50;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #3498db;
+            font-size: 1.8em;
+        }
+        
+        h3 {
+            color: #34495e;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+        
+        .subtitle {
+            color: #666;
+            font-size: 1.1em;
+            margin-bottom: 30px;
+        }
+        
+        .highlight-box {
+            background: #e3f2fd;
+            border-left: 4px solid #2196f3;
+            padding: 20px;
+            margin: 30px 0;
+            border-radius: 4px;
+        }
+        
+        .highlight-box strong {
+            color: #1976d2;
+            font-size: 1.2em;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background: white;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        
+        th {
+            background: #3498db;
+            color: white;
+            padding: 15px;
+            text-align: left;
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 0.85em;
+            letter-spacing: 0.5px;
+        }
+        
+        td {
+            padding: 12px 15px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        
+        tr:hover {
+            background: #f5f5f5;
+        }
+        
+        tr:last-child td {
+            border-bottom: none;
+        }
+        
+        .total-row {
+            background: #f8f9fa;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+        
+        .total-row td {
+            padding: 15px;
+            border-top: 2px solid #3498db;
+        }
+        
+        .amount {
+            text-align: right;
+            font-family: 'Courier New', monospace;
+            font-weight: 500;
+        }
+        
+        .timeline-comparison {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 20px;
+            margin: 30px 0;
+            border-radius: 4px;
+        }
+        
+        .timeline-comparison p {
+            margin: 10px 0;
+            font-size: 1.05em;
+        }
+        
+        .note {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 4px;
+            margin: 20px 0;
+            border-left: 3px solid #6c757d;
+        }
+        
+        .note p {
+            margin: 10px 0;
+            color: #495057;
+        }
+        
+        ul {
+            margin: 15px 0;
+            padding-left: 30px;
+        }
+        
+        li {
+            margin: 8px 0;
+            line-height: 1.6;
+        }
+        
+        footer {
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid #e0e0e0;
+            text-align: center;
+            color: #666;
+            font-size: 0.9em;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+            
+            h1 {
+                font-size: 1.8em;
+            }
+            
+            h2 {
+                font-size: 1.4em;
+            }
+            
+            table {
+                font-size: 0.9em;
+            }
+            
+            th, td {
+                padding: 10px 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Okaloosa County Sheriff's Office</h1>
+        <p class="subtitle">Flock Safety Purchase Order Analysis</p>
+        
+        <div class="highlight-box">
+            <strong>Current Deployment:</strong> 79 Flock Safety cameras throughout Okaloosa County
+            <br>
+            <strong>Source:</strong> OCSO FAQ (January 12, 2026)
+        </div>
+
+        <h2>Purchase Orders by Date</h2>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>PO Number</th>
+                    <th>Order Date</th>
+                    <th class="amount">Amount</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>20210381</td>
+                    <td>09/01/2021</td>
+                    <td class="amount">$196,875.00</td>
+                    <td>Annual subscription (75 cameras), implementation, camera setup, shipping & handling</td>
+                </tr>
+                <tr>
+                    <td>20230078</td>
+                    <td>11/22/2022</td>
+                    <td class="amount">$3,249.00</td>
+                    <td>Flock Falcon Cameras (2), implementation fees</td>
+                </tr>
+                <tr>
+                    <td>20230123</td>
+                    <td>01/06/2023</td>
+                    <td class="amount">$1,250.00</td>
+                    <td>Flock Camera at Airport</td>
+                </tr>
+                <tr>
+                    <td>20230402</td>
+                    <td>09/22/2023</td>
+                    <td class="amount">$4,500.00</td>
+                    <td>Flock Camera Re-locations (6 cameras total)</td>
+                </tr>
+                <tr>
+                    <td>20240061</td>
+                    <td>11/01/2023</td>
+                    <td class="amount">$21,900.00</td>
+                    <td>6 New Flock Cameras - Airport Contract, 6 New Cameras at Airport - Implementation Fees</td>
+                </tr>
+                <tr>
+                    <td>20240062</td>
+                    <td>11/01/2023</td>
+                    <td class="amount">$5,250.00</td>
+                    <td>Flock Camera Re-locations (7 cameras), solar panel and pole</td>
+                </tr>
+                <tr>
+                    <td>20240118</td>
+                    <td>12/26/2023</td>
+                    <td class="amount">$67,000.00</td>
+                    <td>Flock Camera Add-On (20 Cameras), Implementation Fee, Shipping</td>
+                </tr>
+                <tr>
+                    <td>20250043</td>
+                    <td>10/15/2024</td>
+                    <td class="amount">$15,000.00</td>
+                    <td>Flock Safety Platform (Flock OS & Flock Safety Falcon) - renewal term 11/29/2024 - 11/28/25, shipping</td>
+                </tr>
+                <tr>
+                    <td>20250073</td>
+                    <td>10/28/2024</td>
+                    <td class="amount">$124,337.98</td>
+                    <td>Flock Safety Falcon (53 cameras) - includes FlockOS, term: 11/29/2024 - 11/28/2025, credit invoice</td>
+                </tr>
+                <tr>
+                    <td>20250163</td>
+                    <td>01/16/2025</td>
+                    <td class="amount">$750.00</td>
+                    <td>Destin Airport Flock Camera Pole Replacement (pole damaged in traffic crash)</td>
+                </tr>
+                <tr>
+                    <td>20260014</td>
+                    <td>10/07/2025</td>
+                    <td class="amount">$185,000.00</td>
+                    <td>Flock Safety LPR Annual Subscription (53 LPR cameras) - Year 3 of 60 month term, 2025-2026</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr class="total-row">
+                    <td colspan="2"><strong>Total Expenditure</strong></td>
+                    <td class="amount"><strong>$625,111.98</strong></td>
+                    <td></td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <h2>Timeline Analysis</h2>
+        
+        <div class="timeline-comparison">
+            <h3>Press Release vs. First Purchase Order</h3>
+            <p><strong>First Purchase Order:</strong> September 1, 2021</p>
+            <p><strong>First Press Release:</strong> February 17, 2022</p>
+            <p><strong>Gap:</strong> The first purchase order was placed approximately 5 months before the first public press release announcing the Flock Safety camera system.</p>
+        </div>
+
+        <h2>Camera Deployment Timeline</h2>
+        
+        <div class="note">
+            <p><strong>Understanding the Purchase Orders:</strong></p>
+            <p>The confusion in the purchase orders comes from them showing both new camera purchases and annual subscription renewals for existing cameras. The quantities listed don't all represent new cameras being added.</p>
+        </div>
+
+        <h3>Actual Camera Additions:</h3>
+        <ul>
+            <li><strong>September 2021:</strong> 75 cameras (initial deployment)</li>
+            <li><strong>November 2022:</strong> 2 Falcon cameras added</li>
+            <li><strong>January 2023:</strong> 1 camera at airport</li>
+            <li><strong>November 2023:</strong> 6 new cameras at airport</li>
+            <li><strong>December 2023:</strong> 20 cameras added</li>
+        </ul>
+
+        <h3>Subscription Renewals (not new cameras):</h3>
+        <ul>
+            <li><strong>October 2024:</strong> Annual renewal for 53 cameras (Year 2)</li>
+            <li><strong>October 2025:</strong> Annual renewal for 53 cameras (Year 3 of 60-month term)</li>
+        </ul>
+
+        <div class="highlight-box">
+            <strong>Note:</strong> The discrepancy between the total cameras mentioned in various POs (which could suggest 104+ cameras if all were cumulative) and the official count of 79 cameras likely reflects cameras being relocated, replaced, or decommissioned over time.
+        </div>
+
+        <footer>
+            <p>Data compiled from Okaloosa County Sheriff's Office purchase orders and public documents</p>
+            <p>Last updated: January 2026</p>
+        </footer>
+    </div>
+</body>
+</html>
