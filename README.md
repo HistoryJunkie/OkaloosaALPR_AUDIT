@@ -1,119 +1,148 @@
-# OCSO ALPR Audit Analysis
+# OCSO ALPR Audit & Accountability Investigation
 
-This repository contains an analysis of Automated License Plate Recognition (ALPR) search audit data from the Okaloosa County Sheriff's Office (OCSO) in Florida. The analysis examines operational practices, data retention patterns, and system usage against stated policies and applicable Florida law.
+This repository contains an ongoing investigation into the Okaloosa County Sheriff's Office (OCSO) Automated License Plate Recognition (ALPR) system, examining operational practices, contract terms, ethical implications, and compliance with Florida law.
 
-The source data for this analysis came from [this post on Muckrock.](https://www.muckrock.com/foi/okaloosa-county-10449/florida-public-records-act-request-flock-safety-audit-okaloosa-county-sheriffs-department-199490/?fbclid=Iwb21leAPTJvdjbGNrA8yLGmV4dG4DYWVtAjExAHNydGMGYXBwX2lkDDM1MDY4NTUzMTcyOAABHlglCm4IRuenFb9a23rqELjG922FmZjGqOToBvcBl4dMkesEwURIkWlsYBxz_aem_48nRgmN1qusApbXzw9Am_w)
+The source data for this analysis came from [this post on Muckrock.](https://www.muckrock.com/foi/okaloosa-county-10449/florida-public-records-act-request-flock-safety-audit-okaloosa-county-sheriffs-department-199490/)
 
-You can find a template for the public records request [Here](https://github.com/HistoryJunkie/OkaloosaALPR_AUDIT/blob/main/records_request_template.txt)
+## Quick Links
 
-## Background
+| Document | Description |
+|----------|-------------|
+| [Executive Summary](EXECUTIVE_SUMMARY.md) | High-level findings and investigation status |
+| [Full Findings](2_Analysis/retention_analysis/FINDINGS.md) | Detailed retention and network analysis |
+| [Contract Issues](2_Analysis/contract_analysis/contract_issues_template.md) | MSA analysis framework |
+| [Constitutional Concerns](4_Ethical_Issues/constitutional_concerns.md) | Fourth Amendment analysis |
+| [Records Request Templates](5_Methodology/records_request_templates/) | Templates for additional requests |
 
-The Okaloosa County Sheriff's Office deployed a Flock Safety ALPR system with a stated 30-day rolling data retention policy. This project analyzes audit logs from November 1, 2025 through December 8, 2025 to examine actual system usage patterns, data retention practices, and search behaviors.
+## Key Findings
+
+| Finding | Evidence |
+|---------|----------|
+| **Retention Policy Violated** | 463 searches exceeded 30-day limit (max: 524 days) |
+| **Nationwide Surveillance** | 46.8% of searches queried multiple networks (up to 6,709) |
+| **Accountability Blocked** | 100% of officer names and case numbers redacted |
+| **Weak Contract Terms** | Liability capped at 12 months fees; no breach notification |
 
 ## Repository Structure
 
 ```
-├── Source_Data/
-│   ├── 11_1_2025-12_8_2025-Okaloosa_County_FL_SO-Audit.pdf
-│   └── Sharing_Agencies.pdf
-├── Generated_Data/
-│   ├── 11_1_2025-12_8_2025-Okaloosa_County_FL_SO-Audit_EXTRACTED.csv
-│   └── Sharing_Agencies_EXTRACTED.csv
-├── Jupyter_Notebooks/
-│   └── Okaloosa_Parser_CLEAN.ipynb
-├── Supporting_Documents/
-│   ├── FDLE_ALPR_Guidelines_2024.md
-│   ├── FL_Senate_Bill_599_2014.md
-│   ├── FL_Statute_119.011.md
-│   ├── FL_Statute_119.07.md
-│   ├── FL_Statute_316.0777.md
-│   ├── FL_Statute_316.0778.md
-│   ├── FL_Statute_501.171.md
-│   ├── Flock_Safety_Policy_Pulse_Series_Complete.md
-│   └── ocso_flock_safety_press_release.md
-├── FINDINGS.md
-└── README.md
+OkaloosaALPR_AUDIT/
+├── README.md                              # This file
+├── EXECUTIVE_SUMMARY.md                   # High-level findings
+├── Project_Knowledge.md                   # Detailed knowledge base
+│
+├── 1_Source_Data/                         # Original public records
+│   ├── audit_logs/                        # ALPR search audit PDFs
+│   ├── contracts/                         # MSA and related documents
+│   └── correspondence/                    # OCSO communications
+│
+├── 2_Analysis/                            # Investigation findings
+│   ├── retention_analysis/                # 30-day policy violations
+│   ├── contract_analysis/                 # MSA deep dive
+│   ├── network_scale_analysis/            # Multi-network surveillance
+│   └── justification_analysis/            # Search reason analysis
+│
+├── 3_Legal_Framework/                     # Applicable law
+│   ├── florida_statutes/                  # FL state law
+│   ├── federal_cases/                     # Constitutional precedent
+│   └── guidelines/                        # FDLE and other guidance
+│
+├── 4_Ethical_Issues/                      # Civil liberties analysis
+│   ├── constitutional_concerns.md         # 4th Amendment issues
+│   ├── disparate_impact.md               # Discrimination analysis
+│   ├── vendor_accountability.md          # Flock Safety practices
+│   └── mission_creep.md                  # Scope expansion tracking
+│
+├── 5_Methodology/                         # Research methods
+│   ├── notebooks/                         # Jupyter analysis code
+│   ├── data_dictionary.md                # Field definitions
+│   └── records_request_templates/         # FOIA templates
+│
+├── 6_Output/                              # Generated materials
+│   ├── reports/                           # HTML/PDF reports
+│   ├── visualizations/                    # Charts and maps
+│   └── press_materials/                   # Media resources
+│
+└── 7_Research/                            # Background research
+    ├── other_jurisdictions/               # Comparative analysis
+    ├── litigation/                        # Relevant court cases
+    └── vendor_background/                 # Flock Safety profile
 ```
 
-**Quick Links:**
-- [📊 View Analysis Findings](https://github.com/HistoryJunkie/OkaloosaALPR_AUDIT/blob/main/FINDINGS.md)
-- [💻 Parsing Notebook](https://github.com/HistoryJunkie/OkaloosaALPR_AUDIT/blob/main/Jupyter_Notebooks/Okaloosa_Parser_CLEAN.ipynb)
-- [📁 Source Data](https://github.com/HistoryJunkie/OkaloosaALPR_AUDIT/tree/main/Source_Data)
-- [📈 Parsed Audit (CSV)](https://github.com/HistoryJunkie/OkaloosaALPR_AUDIT/blob/main/Generated_Data/11_1_2025-12_8_2025-Okaloosa_County_FL_SO-Audit_EXTRACTED.csv)
-- [📚 Supporting Documents](https://github.com/HistoryJunkie/OkaloosaALPR_AUDIT/tree/main/Supporting_Documents)
+## Investigation Areas
 
-### Directory Descriptions
+### Completed
+- [x] Audit log extraction (7,273 records parsed)
+- [x] Retention violation analysis (463 violations identified)
+- [x] Network scale documentation (6,709 network searches)
+- [x] Contract extraction and initial review
 
-- **[Source_Data/](https://github.com/HistoryJunkie/OkaloosaALPR_AUDIT/tree/main/Source_Data)**: Original audit documents obtained through public records requests, including the raw ALPR search audit log and sharing agency information.
+### In Progress
+- [ ] Contract issues deep dive (liability, data rights, etc.)
+- [ ] Constitutional analysis (Carpenter, mosaic theory)
+- [ ] Vendor accountability research
 
-- **[Generated_Data/](https://github.com/HistoryJunkie/OkaloosaALPR_AUDIT/tree/main/Generated_Data)**: Processed data extracted from source documents. The CSV file contains parsed and structured audit log entries for analysis.
-
-- **[Jupyter_Notebooks/](https://github.com/HistoryJunkie/OkaloosaALPR_AUDIT/tree/main/Jupyter_Notebooks)**: Analysis notebooks containing the data extraction, parsing, and analytical methods used to process the audit logs.
-
-- **[Supporting_Documents/](https://github.com/HistoryJunkie/OkaloosaALPR_AUDIT/tree/main/Supporting_Documents)**: Relevant legal statutes, guidelines, policy documents, and official statements that provide context for the analysis. Includes Florida statutes on ALPR usage, public records law, and privacy protections.
-
-- **[FINDINGS.md](https://github.com/HistoryJunkie/OkaloosaALPR_AUDIT/blob/main/FINDINGS.md)**: Comprehensive analysis of discrepancies between stated policies and operational data, including retention practices, network scale, and accountability measures.
+### Planned
+- [ ] Camera location analysis (pending records request)
+- [ ] Disparate impact mapping
+- [ ] Comparative jurisdiction research
+- [ ] Additional public records requests
 
 ## Data Sources
 
-The primary data source is an audit log covering ALPR searches conducted by OCSO personnel from November 1, 2025 through December 8, 2025. The audit log was obtained through Florida's public records law and contains:
+### Primary
+- **Audit Log**: 809-page PDF covering Nov 1 - Dec 8, 2025 (7,273 searches)
+- **Master Service Agreement**: Flock Safety contract dated September 2023
+- **Sharing Agencies List**: Inter-agency data sharing documentation
 
-- Search timestamps and lookback periods
-- Stated justifications for searches
-- Network and device query scope
-- Redacted officer and case identifiers
-
-Additional context is provided by official OCSO communications, Flock Safety policy documents, and applicable Florida statutes governing ALPR use and data privacy.
-
-## Methodology
-
-The analysis employs a systematic approach to examine audit log data:
-
-1. **Data Extraction**: PDF audit logs are parsed and converted to structured CSV format for analysis
-2. **Temporal Analysis**: Calculation of lookback periods to identify searches exceeding stated retention limits
-3. **Network Scope Analysis**: Examination of single-network versus multi-network search patterns
-4. **Justification Analysis**: Categorization and evaluation of stated search reasons
-5. **Compliance Assessment**: Comparison of operational practices against stated policies and legal requirements
-
-Detailed methodology and code are available in [`Jupyter_Notebooks/Okaloosa_Parser_CLEAN.ipynb`](https://github.com/HistoryJunkie/OkaloosaALPR_AUDIT/blob/main/Jupyter_Notebooks/Okaloosa_Parser_CLEAN.ipynb).
-
-## Key Findings
-
-The analysis identified several areas of concern:
-
-- **Data Retention Discrepancies**: 463 searches exceeded the stated 30-day retention limit, with the longest lookback period reaching 524 days (approximately 1.5 years)
-- **Network Scale**: 46.83% of searches queried multiple networks, with some searches reaching across 6,709 networks and 100,034 devices simultaneously
-- **Documentation Gaps**: 9 searches contained no stated justification in the required reason field
-- **Limited Accountability**: 100% redaction of officer identifiers and case numbers prevents verification of search legitimacy
-
-Full findings are documented in [**FINDINGS.md**](https://github.com/HistoryJunkie/OkaloosaALPR_AUDIT/blob/main/FINDINGS.md).
+### Supporting
+- Florida Statutes (316.0777, 316.0778, 119.07, 501.171)
+- FDLE ALPR Guidelines (2024)
+- OCSO public statements and FAQ
 
 ## Legal Framework
 
-Florida law establishes specific requirements for ALPR system operation and data handling:
+| Statute | Subject | Key Provision |
+|---------|---------|---------------|
+| FL 316.0777 | ALPR Authorization | Criminal justice purpose requirement |
+| FL 316.0778 | Data Retention | 30-day tactical / 3-year investigation limit |
+| FL 501.171 | Privacy | Geolocation as PII |
+| FL 119.07 | Public Records | Disclosure requirements |
 
-- **[FL Statute 316.0777](https://github.com/HistoryJunkie/OkaloosaALPR_AUDIT/blob/main/Supporting_Documents/FL_Statute_316.0777.md)**: Governs ALPR usage by law enforcement agencies
-- **[FL Statute 316.0778](https://github.com/HistoryJunkie/OkaloosaALPR_AUDIT/blob/main/Supporting_Documents/FL_Statute_316.0778.md)**: Prohibits unauthorized ALPR data retention and sharing
-- **[FL Statute 119](https://github.com/HistoryJunkie/OkaloosaALPR_AUDIT/blob/main/Supporting_Documents/FL_Statute_119.011.md)**: Public records law requirements
-- **[FL Statute 501.171](https://github.com/HistoryJunkie/OkaloosaALPR_AUDIT/blob/main/Supporting_Documents/FL_Statute_501.171.md)**: Establishing geolocation data as personally identifiable information
-- **[FDLE Guidelines (2024)](https://github.com/HistoryJunkie/OkaloosaALPR_AUDIT/blob/main/Supporting_Documents/FDLE_ALPR_Guidelines_2024.md)**: State-level best guidelines for ALPR deployment
+## How to Contribute
 
-All referenced statutes and guidelines are available in the [`Supporting_Documents/`](https://github.com/HistoryJunkie/OkaloosaALPR_AUDIT/tree/main/Supporting_Documents) directory.
+### File Public Records Requests
+Templates are available in `5_Methodology/records_request_templates/` for:
+- Contract documents and exhibits
+- Camera locations
+- Policies and training materials
+- Data sharing agreements
+- Security incident records
 
-## Usage
+### Research
+- Document ALPR practices in other jurisdictions
+- Track relevant litigation
+- Research Flock Safety corporate background
+
+### Analysis
+- Extend audit log analysis
+- Map camera locations against demographics
+- Calculate cost-per-search metrics
+
+## Replication
 
 To replicate or extend this analysis:
 
-1. Review the source audit data in [`Source_Data/`](https://github.com/HistoryJunkie/OkaloosaALPR_AUDIT/tree/main/Source_Data)
-2. Examine the data extraction and parsing methodology in [`Jupyter_Notebooks/Okaloosa_Parser_CLEAN.ipynb`](https://github.com/HistoryJunkie/OkaloosaALPR_AUDIT/blob/main/Jupyter_Notebooks/Okaloosa_Parser_CLEAN.ipynb)
-3. Access the structured data in [`Generated_Data/`](https://github.com/HistoryJunkie/OkaloosaALPR_AUDIT/tree/main/Generated_Data) for further analysis
-4. Reference applicable legal frameworks in [`Supporting_Documents/`](https://github.com/HistoryJunkie/OkaloosaALPR_AUDIT/tree/main/Supporting_Documents)
-5. Review comprehensive findings in [`FINDINGS.md`](https://github.com/HistoryJunkie/OkaloosaALPR_AUDIT/blob/main/FINDINGS.md)
+1. Review source documents in `1_Source_Data/`
+2. Examine parsing methodology in `5_Methodology/notebooks/`
+3. Reference data dictionary in `5_Methodology/data_dictionary.md`
+4. Use records request templates for additional data
+5. Follow analysis frameworks in `2_Analysis/` and `4_Ethical_Issues/`
 
-## About This Project
+## About
 
-This project documents methods and findings from an independent analysis of publicly available ALPR audit data. The goal is to provide empirical examination of ALPR system usage patterns, assess alignment with stated policies, and contribute to informed public discourse on surveillance technology deployment and oversight.
+This project documents an independent investigation of publicly available ALPR data. The goal is to provide empirical examination of surveillance technology deployment, assess alignment with stated policies and legal requirements, and contribute to informed public discourse on law enforcement surveillance practices.
 
 ## License
 
-The analysis, code, and documentation in this repository are provided for transparency and public interest purposes. Source documents remain subject to their original terms and Florida public records law.
+Analysis, code, and documentation are provided for transparency and public interest purposes. Source documents remain subject to their original terms and Florida public records law.
