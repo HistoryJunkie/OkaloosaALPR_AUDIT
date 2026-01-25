@@ -8,14 +8,6 @@
 **Source:** [Florida Senate - SB226/HB599](https://www.flsenate.gov/Session/Bill/2014/599/BillText/c2/PDF)
 
 
-
-# Florida House Bill 599 (2014)
-## CS/CS/HB 599
-
-**Source:** [Florida Senate SB226/HB599](https://www.flsenate.gov/Session/Bill/2014/599/BillText/c2/PDF)
-
-**Coding:** Words stricken are deletions; words underlined are additions.
-
 ---
 
 ## A bill to be entitled
