@@ -11,18 +11,19 @@ Before you look at a map, you must define what "correct" looks like.
 ### Phase 2: Batching (The "County-by-County" Approach)
 
 Trying to audit 97k points at once is where the pain comes from.
-4.  **Export a "Small Batch":** Filter your database by a single county (e.g., Okaloosa).
-5.  **Generate a GeoJSON:** Save only that county's `needs_review` records into a single file.
-6.  **Open JOSM:** Download the live OSM data for that specific county.
+
+4. **Export a "Small Batch":** Filter your database by a single county (e.g., Okaloosa).
+5. **Generate a GeoJSON:** Save only that county's `needs_review` records into a single file.
+6. **Open JOSM:** Download the live OSM data for that specific county.
 
 ---
 
 ### Phase 3: The JOSM Power Move (The "Smooth" Part)
 
 This is where the actual work happens. You are not clicking points; you are managing a list.
-7.  **Import your GeoJSON:** Layer your database points over the live OSM data in JOSM.
-8.  **Use the "Todo List" Plugin:** Add all imported points to the Todo list.
-9.  **The "Next" Workflow:** Click "Next" in the plugin. JOSM will automatically zoom to the first camera.
+7. **Import your GeoJSON:** Layer your database points over the live OSM data in JOSM.
+8. **Use the "Todo List" Plugin:** Add all imported points to the Todo list.
+9. **The "Next" Workflow:** Click "Next" in the plugin. JOSM will automatically zoom to the first camera.
 10. **Apply Presets:** Select the camera, apply your "Correct Schema" (you can save this as a button/preset), and move to the next.
 
 ---
